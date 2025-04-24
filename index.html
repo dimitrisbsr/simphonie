@@ -9,32 +9,111 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, sans-serif;
             margin: 0;
-            padding: 80px 20px;
-            text-align: center;
+            padding: 0;
             background-color: #ffffff;
             color: #222;
         }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.2em;
+        header {
+            background-color: #ffffff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
         }
-        p {
-            font-size: 1.2em;
-            margin-bottom: 1.5em;
+        header h1 {
+            font-size: 1.5em;
+            color: #d1006f;
+            margin: 0;
         }
-        .cta {
-            background-color: #d1006f;
-            color: #fff;
-            padding: 12px 24px;
+        nav a {
+            margin-left: 20px;
             text-decoration: none;
-            border-radius: 6px;
+            color: #222;
+            font-weight: 500;
+        }
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #d1006f;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
             font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        section h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #222;
+            color: #fff;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
-    <h1>Dein Tarif. Unsere Harmonie.</h1>
+
+<header>
+    <h1>Simphonie</h1>
+    <nav>
+        <a href="#about">Über mich</a>
+        <a href="#services">Leistungen</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Dein Tarif. Unsere Harmonie.</h2>
     <p>Die beste Verbindung beginnt hier.</p>
-    <a href="#" class="cta">Jetzt starten</a>
+    <a class="btn" href="#contact">Jetzt starten</a>
+</div>
+
+<section id="about">
+    <h3>Über mich</h3>
+    <p>Ich bin unabhängiger Mobilfunkberater mit Spezialisierung auf die Deutsche Telekom. Mein Ziel ist es, für dich oder dein Unternehmen den besten Tarif zu finden – transparent, professionell und persönlich.</p>
+</section>
+
+<section id="services">
+    <h3>Leistungen</h3>
+    <ul>
+        <li>Beratung zu Mobilfunkverträgen der Deutschen Telekom</li>
+        <li>Tarifoptimierung für Privat- und Geschäftskunden</li>
+        <li>Vertragsübernahmen & Vertragsverlängerungen</li>
+        <li>Unterstützung bei Multi-SIM & Datenoptionen</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h3>Kontakt</h3>
+    <p>Für Fragen oder ein persönliches Gespräch schreib mir gerne eine Nachricht:</p>
+    <p><strong>E-Mail:</strong> dimibesiris@gmail.com</p>
+</section>
+
+<footer>
+    &copy; 2025 Simphonie Consulting – Alle Rechte vorbehalten.
+</footer>
+
 </body>
 </html>
